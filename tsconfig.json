@@ -1,24 +1,16 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "outDir": "out",
-        "noUnusedParameters": true,
-        "noUnusedLocals": true,
-        "lib": [
-            "es6"
-        ],
-        "sourceMap": true,
-        "rootDir": ".",
-        "types": [
-            "node",
-            "lodash",
-            "mocha"
-        ]
-    },
-    "exclude": [
-        "node_modules",
-        "out",
-        ".vscode-test"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "out",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "lib": ["es6"],
+    "sourceMap": true,
+    "rootDir": ".",
+    "types": ["node", "lodash", "mocha"]
+  },
+  "exclude": ["node_modules", "out", ".vscode-test"]
 }
+
