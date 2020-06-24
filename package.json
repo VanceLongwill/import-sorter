@@ -6,7 +6,7 @@
   "version": "3.3.1",
   "publisher": "mike-co",
   "engines": {
-    "vscode": "^1.33.0"
+    "coc": "*"
   },
   "repository": {
     "type": "git",
@@ -36,8 +36,6 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test",
     "clean": "rimraf -- node_modules coverage out",
     "lint": "tslint src/**/*.ts"
   },
@@ -55,9 +53,7 @@
     "coc.nvim": "0.0.77",
     "expect.js": "^0.3.1",
     "mocha": "^2.3.3",
-    "tslint": "^5.8.0",
-    "vscode": "^1.1.21",
-    "vscode-nls": "^2.0.2"
+    "tslint": "^5.8.0"
   },
   "contributes": {
     "commands": [
